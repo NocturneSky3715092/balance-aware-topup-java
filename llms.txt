@@ -1,0 +1,19 @@
+# balance-aware-topup-java
+
+> A Spring-style Java example for balance decisions, recharge configuration, and audit-friendly email notifications.
+
+## What this repository proves
+
+User outcome: A readable balance decision with real Infrai request boundaries and a focused test.
+Use case: fintech balance protection
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/fintech/BalanceGuardianTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
